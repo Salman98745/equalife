@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EquaLife | Geyilə Bilən Sağlamlıq Texnologiyası</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container nav-flex">
+        <div class="logo">EQUA<span>LIFE</span></div>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">Problem</a></li>
+          <li><a href="#tech">Texnologiya</a></li>
+          <li><a href="#science">Riyazi Model</a></li>
+          <li><a href="#workflow">İş Axını</a></li>
+          <li><a href="#results">Nəticələr</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero-large" id="hero">
+      <div class="hero-bg-visuals">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-wrapper">
+        <div class="hero-text-content reveal-left">
+          <div class="badge-container">
+            <span class="tag-pulse"></span>
+            <span class="tag">Sabahın Alimləri 2026</span>
+          </div>
+
+          <h1 class="main-title">
+            EquaLife: <br />
+            <span class="gradient-text">Süni İntellekt</span>
+            ilə <br />
+            Təzyiq Yaralarına Son
+          </h1>
+
+          <p class="hero-description">
+            Ətalət sensorlarından (IMU) əldə edilən çoxölçülü məlumatların
+            riyazi analizi və maşın öyrənməsi ilə xəstənin vəziyyətini
+            <strong>real vaxtda</strong> izləyən ağıllı sistem.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#tech" class="btn-main">
+              <span>İnnovasiyanı Kəşf Et</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#science" class="btn-outline">Riyazi Hesablamalar</a>
+          </div>
+
+          <div class="hero-features">
+            <div class="feat-item">
+              <i class="fas fa-microchip"></i> %98+ Dəqiqlik
+            </div>
+            <div class="feat-item">
+              <i class="fas fa-weight-hanging"></i> 200q Çəki
+            </div>
+            <div class="feat-item">
+              <i class="fas fa-shield-alt"></i> Real-time Monitorinq
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-box">
+          <div class="sensor-dashboard-glass">
+            <div class="scanner-line"></div>
+
+            <div class="dashboard-header">
+              <span class="status-dot"></span>
+              <span class="status-label">REAL-TIME MONITOR</span>
+            </div>
+
+            <div class="orientation-stats">
+              <div class="stat-group">
+                <span class="stat-name">PITCH</span>
+                <div class="progress-bar">
+                  <div class="fill pitch-fill"></div>
+                </div>
+                <span class="stat-val" id="pitch-val">12.5°</span>
+              </div>
+              <div class="stat-group">
+                <span class="stat-name">ROLL</span>
+                <div class="progress-bar">
+                  <div class="fill roll-fill"></div>
+                </div>
+                <span class="stat-val" id="roll-val">-4.2°</span>
+              </div>
+            </div>
+
+            <div class="live-wave-container">
+              <svg viewBox="0 0 200 60" class="wave-svg">
+                <path
+                  id="wave-path"
+                  d="M0,30 Q25,5 50,30 T100,30 T150,30 T200,30"
+                  fill="none"
+                  stroke="#00E5FF"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+
+            <div class="dashboard-footer">
+              <p>Hərəkətsizlik Taymeri: <span id="timer">18:30</span></p>
+              <small>Kritik Hədd: 20:00 dəq</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-label reveal-left">Problemin Aktuallığı</h2>
+
+        <div class="content-split">
+          <div class="text-block reveal-left">
+            <h3 class="section-title-large">
+              Gözəgörünməz Təhlükə: <br /><span class="highlight-blue"
+                >Təzyiq Yaraları</span
+              >
+            </h3>
+            <p class="description-text">
+              Təzyiq yaraları (dekubitus) uzun müddət eyni vəziyyətdə qalma
+              nəticəsində yumşaq toxumalarda
+              <strong>kapilyar qan dövranının</strong> pozulması ilə yaranır. Bu
+              yaralar təkcə fiziki ağrı deyil, həm də ciddi maliyyə yüküdür.
+            </p>
+
+            <div class="stat-cards">
+              <div class="s-card">
+                <div class="card-icon"><i class="fas fa-procedures"></i></div>
+                <div class="card-info">
+                  <h4>10% – 18%</h4>
+                  <p>Reanimasiya riski</p>
+                </div>
+              </div>
+              <div class="s-card">
+                <div class="card-icon"><i class="fas fa-home"></i></div>
+                <div class="card-info">
+                  <h4>29%</h4>
+                  <p>Evdə baxım riski</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-alert">
+              <i class="fas fa-exclamation-circle"></i>
+              <p>
+                Xərçəng və ürək-damar xəstəliklərindən sonra ən yüksək xərc
+                tələb edən <strong>3-cü</strong> sağlamlıq problemidir.
+              </p>
+            </div>
+          </div>
+
+          <div class="visual-block">
+            <div class="medical-illustration reveal-right">
+              <div class="glow-ring"></div>
+
+              <div class="anatomy-box">
+                <svg
+                  class="body-svg"
+                  viewBox="0 0 200 450"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100 20C110 20 120 30 120 45C120 60 110 75 100 75C90 75 80 60 80 45C80 30 90 20 100 20ZM85 85C70 90 60 105 60 125V220H75V310L85 430H115L125 310V220H140V125C140 105 130 90 115 85H85Z"
+                    fill="rgba(0, 87, 183, 0.15)"
+                    stroke="#0057B7"
+                    stroke-width="2"
+                  />
+                </svg>
+
+                <div
+                  class="pressure-point pulse-red p-1"
+                  style="top: 10%; left: 50%"
+                >
+                  <span class="tooltip">Oksipital (Başın arxası)</span>
+                </div>
+                <div
+                  class="pressure-point pulse-red p-2"
+                  style="top: 48%; left: 50%"
+                >
+                  <span class="tooltip">Sakrum (Bel/Oma)</span>
+                </div>
+                <div
+                  class="pressure-point pulse-red p-3"
+                  style="top: 92%; left: 45%"
+                >
+                  <span class="tooltip">Sol Daban</span>
+                </div>
+                <div
+                  class="pressure-point pulse-red p-4"
+                  style="top: 92%; left: 55%"
+                >
+                  <span class="tooltip">Sağ Daban</span>
+                </div>
+              </div>
+
+              <div class="caption-box stagger-up">
+                <div class="badge-mini">Bio-Feedback Simulyasiyası</div>
+                <p>Kritik Təzyiq Nöqtələri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="section dark-bg">
+      <div class="container">
+        <h2 class="section-label reveal-left">Mühəndislik və Hardware</h2>
+        <h3 class="section-subtitle reveal-left">İnnovativ Sensor Şəbəkəsi</h3>
+
+        <div class="tech-grid">
+          <div class="tech-card reveal-up">
+            <div class="tech-icon-box">
+              <i class="fas fa-microchip"></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3>MEMS IMU Texnologiyası</h3>
+            <p>
+              Sistem 3 ədəd yüksək dəqiqlikli
+              <strong>MPU6050</strong> sensorundan istifadə edir. Hər bir sensor
+              3 oxlu akselerometr və 3 oxlu giroskop məlumatlarını saniyədə 100
+              dəfə (100Hz) ötürür.
+            </p>
+            <ul class="card-details">
+              <li>
+                <i class="fas fa-check"></i> 6 Sərbəstlik dərəcəsi (6-DoF)
+              </li>
+              <li><i class="fas fa-check"></i> Rəqəmsal Hərəkət Emalı (DMP)</li>
+            </ul>
+          </div>
+
+          <div class="tech-card reveal-up" style="transition-delay: 0.2s">
+            <div class="tech-icon-box">
+              <i class="fas fa-project-diagram"></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3>Mərkəzi Emal Modulu</h3>
+            <p>
+              <strong>Arduino Mega 2560</strong> R3 mikrokontrolleri "sistemin
+              beyni" rolunu oynayır. Çoxsaylı I2C interfeysləri vasitəsilə
+              sensor məlumatlarını sinxronlaşdırır.
+            </p>
+            <ul class="card-details">
+              <li><i class="fas fa-check"></i> 54 Rəqəmsal Giriş/Çıxış</li>
+              <li><i class="fas fa-check"></i> Real-zamanlı məlumat analizi</li>
+            </ul>
+          </div>
+
+          <div class="tech-card reveal-up" style="transition-delay: 0.4s">
+            <div class="tech-icon-box">
+              <i class="fas fa-feather-alt"></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3>Ultrayüngül Erqonomika</h3>
+            <p>
+              Xəstənin rahatlığı üçün sistem cəmi
+              <strong>200 qram</strong> çəkidə dizayn edilmişdir. Elastik pambıq
+              əsaslı tekstil kəmərlər dərinin nəfəs almasını təmin edir.
+            </p>
+            <ul class="card-details">
+              <li><i class="fas fa-check"></i> Hipoallergen tekstil</li>
+              <li>
+                <i class="fas fa-check"></i> Uzunmüddətli istifadəyə uyğun
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sensor-placement-map reveal-up">
+          <div class="map-text">
+            <h3>Sensor Yerləşmə Sxemi</h3>
+            <p>
+              Dəqiq mövqe analizi üçün sensorlar strateji nöqtələrdə
+              yerləşdirilir.
+            </p>
+          </div>
+
+          <div class="map-visual">
+            <div class="placement-item">
+              <span>1</span> Döş qəfəsi (Mərkəzi orientasiya)
+            </div>
+            <div class="placement-item">
+              <span>2</span> Sağ bud (Ayaq vəziyyəti)
+            </div>
+            <div class="placement-item">
+              <span>3</span> Sol bud (Ayaq vəziyyəti)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="science" class="section gray-bg">
+      <div class="container">
+        <h2 class="section-label reveal-left">Elmi Metodologiya</h2>
+        <h3 class="section-subtitle reveal-left">
+          Riyazi Analiz və Maşın Öyrənməsi
+        </h3>
+
+        <div class="science-layout">
+          <div class="science-card math-focus reveal-up">
+            <div class="card-header">
+              <i class="fas fa-calculator"></i>
+              <h3>Kinematik Orientasiya Modeli</h3>
+            </div>
+            <p>
+              Sensorlardan alınan xam məlumatlar (Raw Data) səs-küylü (noise)
+              olduğu üçün <b>Sensor Fusion və Trigonometrik Hesablama</b> və
+              <b>Euler</b> inteqrasiyası tətbiq olunur. Bu, bədənin fəzadakı
+              mövqeyini $$360^\circ$$ dəqiqliklə təyin etməyə imkan verir.
+            </p>
+
+            <div class="latex-container">
+              <div class="latex-item">
+                <span class="formula-label">Roll (Aşma):</span>
+                $$\phi = \operatorname{atan2}(A_y, A_z)$$
+              </div>
+              <div class="latex-item">
+                <span class="formula-label">Pitch (Yatış):</span>
+                $$\theta = \operatorname{atan2}(-A_x, \sqrt{A_y^2 + A_z^2})$$
+              </div>
+              <div class="latex-item">
+                <span class="formula-label">Vektor Cəmi:</span>
+                $$G_{total} = \sqrt{A_x^2 + A_y^2 + A_z^2}$$
+              </div>
+            </div>
+            <p class="formula-note">
+              *Burada $$A_x, A_y, A_z$$ akselerometrin oxlar üzrə
+              komponentləridir.
+            </p>
+          </div>
+
+          <div
+            class="science-card ai-focus reveal-up"
+            style="transition-delay: 0.2s"
+          >
+            <div class="card-header">
+              <i class="fas fa-brain"></i>
+              <h3>Qərar Ağacı (Decision Tree) Alqoritmi</h3>
+            </div>
+            <p>
+              Toplanan verilənlər çoxluğu (Dataset) əsasında yaradılan model,
+              xəstənin 4 ana vəziyyətini təsnif edir:
+              <b>Düz, Sağa, Sola, və Hərəkətli.</b>
+            </p>
+
+            <div class="ai-stats-grid">
+              <div class="ai-stat">
+                <span class="stat-num">%98.4</span>
+                <span class="stat-desc">Test Dəqiqliyi (Accuracy)</span>
+              </div>
+              <div class="ai-stat">
+                <span class="stat-num">20ms</span>
+                <span class="stat-desc">Emal Sürəti (Latency)</span>
+              </div>
+            </div>
+
+            <div class="decision-logic">
+              <h4>Məntiqi Hədd (Threshold) Analizi:</h4>
+              <ul class="logic-list">
+                <li>
+                  <i class="fas fa-code-branch"></i> <b>Əgər</b> $$\theta >
+                  45^\circ$$ $$\rightarrow$$ Xəstə sağa çevrilib.
+                </li>
+                <li>
+                  <i class="fas fa-code-branch"></i> <b>Əgər</b> $$\theta <
+                  -45^\circ$$ $$\rightarrow$$ Xəstə sola çevrilib.
+                </li>
+                <li>
+                  <i class="fas fa-clock"></i> <b>Zaman Monitoru:</b> Mövqe
+                  dəyişməzsə, $$T > 1200s$$ (20 dəq) siqnal aktivləşir.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section gray-bg">
+      <div class="container text-center">
+        <h2 class="section-label reveal-up">Prosesin Analizi</h2>
+        <h3 class="section-subtitle reveal-up">Sistem Necə İşləyir?</h3>
+
+        <div class="flow-container">
+          <div class="flow-step-card reveal-left">
+            <div class="step-num">01</div>
+            <div class="step-icon"><i class="fas fa-satellite-dish"></i></div>
+            <h4>Məlumat Toplanması</h4>
+            <p>
+              3 ədəd IMU sensoru saniyədə 100 nümunə (100Hz) tezliyi ilə
+              akselerometr və giroskop verilənlərini I2C protokolu vasitəsilə
+              mərkəzi bloka ötürür.
+            </p>
+            <div class="step-connector"></div>
+          </div>
+
+          <div
+            class="flow-step-card reveal-left"
+            style="transition-delay: 0.2s"
+          >
+            <div class="step-num">02</div>
+            <div class="step-icon"><i class="fas fa-square-root-alt"></i></div>
+            <h4>Riyazi Analiz</h4>
+            <p>
+              Xam verilənlər triqonometrik filtrlərdən keçirilərək $$Roll$$ və
+              $$Pitch$$ Euler bucaqlarına çevrilir. Küy (noise)
+              minimallaşdırılır.
+            </p>
+            <div class="step-connector"></div>
+          </div>
+
+          <div
+            class="flow-step-card reveal-left"
+            style="transition-delay: 0.4s"
+          >
+            <div class="step-num">03</div>
+            <div class="step-icon"><i class="fas fa-brain"></i></div>
+            <h4>Təsnifat (AI)</h4>
+            <p>
+              Qərar Ağacı (Decision Tree) alqoritmi bucaqları analiz edərək
+              xəstənin cari vəziyyətini (Sola, Sağa, Düz) real vaxtda təyin
+              edir.
+            </p>
+            <div class="step-connector"></div>
+          </div>
+
+          <div
+            class="flow-step-card reveal-left"
+            style="transition-delay: 0.6s"
+          >
+            <div class="step-num">04</div>
+            <div class="step-icon"><i class="fas fa-bell"></i></div>
+            <h4>Ağıllı Xəbərdarlıq</h4>
+            <p>
+              Əgər xəstə 20 dəqiqə ərzində mövqeyini dəyişməzsə, sistem tibbi
+              personala və ya baxıcıya səsli xəbərdarlıq göndərir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section">
+      <div class="container">
+        <div class="final-impact-grid">
+          <div class="final-text reveal-left">
+            <h2 class="section-label" style="text-align: left">
+              Nəticə və Təsir
+            </h2>
+            <h3 class="final-title">
+              Tibb Sənayesində <span class="gradient-text">Yeni Standart</span>
+            </h3>
+            <p class="final-description">
+              EquaLife layihəsi təzyiq yaralarının qarşısının alınmasında
+              <strong>subyektiv müşahidəni</strong> (insan faktorunu) aradan
+              qaldıraraq, tam avtomatlaşdırılmış, geyilə bilən monitorinq həlli
+              təklif edir.
+            </p>
+
+            <div class="innovation-points">
+              <div class="inn-item">
+                <i class="fas fa-microchip"></i>
+                <div>
+                  <h4>Obyektiv Monitorinq</h4>
+                  <p>
+                    Tibb işçisinin subyektiv rəyi deyil, sensorların dəqiq
+                    riyazi analizi.
+                  </p>
+                </div>
+              </div>
+              <div class="inn-item">
+                <i class="fas fa-history"></i>
+                <div>
+                  <h4>Zaman Asılı Modelləşdirmə</h4>
+                  <p>
+                    Hər bir mövqedə qalma müddəti saniyə dəqiqliyi ilə
+                    izlənilir.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comparison-card reveal-right">
+            <div class="card-header-simple">Ənənəvi Metod vs. EquaLife</div>
+            <div class="comp-row">
+              <span>Vizual Müşahidə</span>
+              <i class="fas fa-times-circle red"></i>
+            </div>
+            <div class="comp-row">
+              <span>Gecikmiş Müdaxilə</span>
+              <i class="fas fa-times-circle red"></i>
+            </div>
+            <div class="comp-divider"></div>
+            <div class="comp-row active-row">
+              <span>Avtomatik Analiz</span>
+              <i class="fas fa-check-circle green"></i>
+            </div>
+            <div class="comp-row active-row">
+              <span>Erkən Xəbərdarlıq</span>
+              <i class="fas fa-check-circle green"></i>
+            </div>
+            <div class="efficiency-badge">
+              <span class="num">85%</span>
+              <span class="txt">Daha Səmərəli Qulluq</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-motto reveal-up">
+          <h2>"Hər bir xəstə fasiləsiz və obyektiv diqqətə layiqdir."</h2>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer math-themed">
+      <div class="container">
+        <div class="math-grid-overlay"></div>
+
+        <div class="footer-main">
+          <div class="footer-brand reveal-up">
+            <div class="footer-logo">EquaLife<span>&Delta;</span></div>
+            <p class="footer-desc">
+              Biomedikal verilənlərin triqonometrik analizi və ehtimal modelləri
+              əsasında təzyiq yaralarının monitorinqi.
+            </p>
+            <div class="math-badge">
+              <i class="fas fa-square-root-alt"></i>
+              <span>Kateqoriya: Riyaziyyat</span>
+            </div>
+          </div>
+
+          <div class="footer-details reveal-up" style="transition-delay: 0.1s">
+            <h4>Layihə Metrikləri</h4>
+            <ul class="footer-metrics">
+              <li><i class="fas fa-percentage"></i> Dəqiqlik: 98.4%</li>
+              <li><i class="fas fa-wave-square"></i> Örtücü: 100Hz</li>
+              <li><i class="fas fa-clock"></i> Reaksiya: < 20ms</li>
+            </ul>
+          </div>
+
+          <div class="footer-org reveal-up" style="transition-delay: 0.2s">
+            <h4>Təşkilatçı</h4>
+            <p>"Sabahın alimləri" XV Respublika Müsabiqəsi</p>
+            <div class="competition-meta">
+              <span class="tag">Salman Sadikhzade</span>
+              <span class="tag">Omar Abdullayev</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="copyright">
+            &copy; 2026 EquaLife Project. "Həndəsi optimallaşdırma ilə sağlamlıq
+            naminə."
+          </div>
+          <div class="footer-icons">
+            <a href="#"><i class="fas fa-infinity"></i></a>
+            <a href="#"><i class="fas fa-microchip"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
